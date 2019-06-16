@@ -1,0 +1,19 @@
+{
+  "name": "node_example",
+  "version": "1.0.0",
+  "description": "a test package for the deploy workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcommand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loeken/node_example.git"
+  },
+  "author": "author",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loeken/node_example/issues"
+  },
+  "homepage": "https://github.com/loeken/node_example#readme"
+}
