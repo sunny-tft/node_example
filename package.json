@@ -2,9 +2,10 @@
   "name": "node_example",
   "version": "1.0.0",
   "description": "a test package for the deploy workflow",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "testcommand"
+    "start": "forever -l node_example.forever -a start server.js -p ../home/.forever",
+    "stop": "forever -l node_example.forever -a stop server.js -p ../home/.forever"
   },
   "repository": {
     "type": "git",
@@ -17,3 +18,4 @@
   },
   "homepage": "https://github.com/loeken/node_example#readme"
 }
+
