@@ -4,8 +4,8 @@
   "description": "a test package for the deploy workflow",
   "main": "server.js",
   "scripts": {
-    "start": "forever -l node_example.forever -a start server.js -p /home/.forever",
-    "stop": "forever -l node_example.forever -a stop server.js -p /home/.forever"
+    "start": "FOREVER_ROOT=../homme/.forever /usr/bin/forever -l node_example.forever -a start server.js",
+    "stop": "FOREVER_ROOT=../home/.forever /usr/bin/forever -l node_example.forever -a stop server.js -p /home/.forever"
   },
   "repository": {
     "type": "git",
