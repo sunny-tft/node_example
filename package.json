@@ -7,7 +7,7 @@
     "pm2": "^4.1.2"
   },
   "scripts": {
-    "start": "pm2 start index.js -i 0 --env production",
+    "start": "pm2 start server.js -i 0 --env production",
     "stop": "pm2 delete all"
   },
   "repository": {
