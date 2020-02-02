@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "a test package for the deploy workflow",
   "main": "server.js",
+  "dependencies": {
+    "pm2": "^4.1.2"
+  },
   "scripts": {
-    "start": "PORT=30027 FOREVER_ROOT=../home/.forever /usr/bin/forever -l node_example.forever -a -p ../home/.forever --id node_example start server.js",
-    "stop": "PORT=30027 FOREVER_ROOT=../home/.forever /usr/bin/forever -p ../home/.forever --id node_example stop server.js"
+    "start": "pm2 start index.js -i 0 --env production",
+    "stop": "pm2 delete all"
   },
   "repository": {
     "type": "git",
