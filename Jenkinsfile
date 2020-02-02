@@ -9,7 +9,9 @@ pipeline {
       }
       steps {
         sh "npm install"
-	sh "npm run stop"
+	catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+	  sh "npm run stop"
+        }
         sh "npm run start"
       }
     }
