@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       environment {
         PORT=12345
-        ENV="staging"
+        NODE_ENV="staging"
       }
       steps {
         sh "npm install"
