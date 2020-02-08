@@ -6,11 +6,6 @@
   "dependencies": {
     "pm2": "^4.1.2"
   },
-  "scripts": {
-    "startOrRestartDevelopment": "pm2 startOrRestart ecosystem.config.yml",
-    "startOrRestartStaging": "pm2 startOrRestart ecosystem.config.yml --env staging",
-    "startOrRestartProduction": "pm2 startOrRestart ecosystem.config.yml --env production"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/loeken/node_example.git"
@@ -22,4 +17,3 @@
   },
   "homepage": "https://github.com/loeken/node_example#readme"
 }
-
