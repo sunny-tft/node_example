@@ -1,6 +1,9 @@
 pipeline {
   agent any
   stages {
+    stage('launch pm2') {
+      sh "node_modules/pm2/bin/pm2 list"
+    }
     stage('build') {
       environment {
         PORT=12345
