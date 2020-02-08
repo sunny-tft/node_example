@@ -7,7 +7,7 @@
     "pm2": "^4.1.2"
   },
   "scripts": {
-    "startOrRestart": "pm2 startOrRestart --name node_example server.js -i 1 --env production"
+    "startOrRestart": "pm2 startOrRestart ecosystemc.config.yml --env production"
   },
   "repository": {
     "type": "git",
