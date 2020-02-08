@@ -5,7 +5,7 @@ const password = process.env.PASSWORD || "topsecret";
 
 const requestHandler = (request, response) => {
   console.log(request.url);
-  response.end('Hello Node.js Server! env: ' + environment)
+  response.end('Hello Node.js Server! env: ' + environment + " password : " + password)
 };
 
 const server = http.createServer(requestHandler);
