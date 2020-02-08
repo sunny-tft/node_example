@@ -6,6 +6,9 @@
   "dependencies": {
     "pm2": "^4.1.2"
   },
+  "scripts": {
+    "start": "pm2 startOrRestart ecosystem.config.yml"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/loeken/node_example.git"
