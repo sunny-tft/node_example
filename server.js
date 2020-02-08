@@ -20,7 +20,7 @@ const requestHandler = (request, response) => {
 // we create the server
 const server = http.createServer(requestHandler);
 
-// we create a socklisten on PORT
+// we create a sock listen on PORT
 server.listen(port, (err) => {
   if (err) {
     // if something went wrong binding to the port
