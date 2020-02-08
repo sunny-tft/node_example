@@ -7,7 +7,7 @@
     "pm2": "^4.1.2"
   },
   "scripts": {
-    "startOrRestart": "pm2 startOrRestart ecosystem.config.yml --env production"
+    "startOrRestart": "pm2 startOrRestart ecosystem.config.yml"
   },
   "repository": {
     "type": "git",
