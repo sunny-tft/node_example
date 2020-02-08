@@ -3,8 +3,9 @@ pipeline {
   stages {
     stage('build') {
       environment {
+        //the following needs to be set to not kill the node process
         JENKINS_NODE_COOKIE='dontkill'
-        PASSWORD="readfromjenkinsfile"
+        PASSWORD=credentials("example_password_1")
       }
       steps {
         sh "npm install"
