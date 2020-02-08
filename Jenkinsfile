@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('build') {
       environment {
-          BUILD_ID="dontKillMe"
+        JENKINS_NODE_COOKIE='dontkill'
+        PASSWORD="readfromjenkinsfile"
       }
       steps {
         sh "npm install"

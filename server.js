@@ -1,6 +1,7 @@
 const http = require('http');
 const port = process.env.PORT || 3000;
 const environment = process.env.NODE_ENV || "development";
+const password = process.env.PASSWORD || "topsecret";
 
 const requestHandler = (request, response) => {
   console.log(request.url);
