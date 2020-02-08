@@ -3,9 +3,7 @@ apps:
     name     : 'node_example-app'
     instances: 1
     exec_mode: cluster
-  - script: ./index.js
-    name: 'worker'
-    watch: true
+    watch: false
     env:
       NODE_ENV: development
     env_production:
