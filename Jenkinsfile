@@ -11,6 +11,7 @@ pipeline {
         catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
           sh "npm run stop"
         }
+        sh 'sleep 5'
         sh "npm run start"
       }
     }
