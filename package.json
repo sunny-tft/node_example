@@ -9,7 +9,8 @@
   "scripts": {
     "start": "pm2 start --name node_example server.js -i 1 --env production",
     "stop": "pm2 stop node_example;sleep 5",
-    "save": "pm2 save --force"
+    "save": "pm2 save --force",
+    "autosave": "pm2 set pm2:autodump true"
   },
   "repository": {
     "type": "git",
