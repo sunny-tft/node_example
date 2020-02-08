@@ -7,8 +7,8 @@ pipeline {
       }
       steps {
         sh "npm install"
-        sh "pm2 save --force"
-        sh "pm2 startOrRestart ecosystem.config.yml --env production"
+        sh "node_modules/pm2/bin/pm2 save --force"
+        sh "node_modules/pm2/bin/pm2 startOrRestart ecosystem.config.yml --env production"
       }
     }
   }
