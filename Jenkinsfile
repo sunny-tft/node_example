@@ -7,7 +7,7 @@ pipeline {
       }
       steps {
         sh "npm install"
-        sh "npm run startOrRestartStaging"
+        sh "npm run startOrRestartProduction"
       }
     }
   }
