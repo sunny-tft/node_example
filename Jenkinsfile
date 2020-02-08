@@ -2,7 +2,9 @@ pipeline {
   agent any
   stages {
     stage('launch pm2') {
-      sh "node_modules/pm2/bin/pm2 list"
+      steps {
+        sh "node_modules/pm2/bin/pm2 list"
+      }
     }
     stage('build') {
       environment {
