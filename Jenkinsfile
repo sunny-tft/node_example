@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       environment {
-          BUILD_ID=dontKillMe
+          BUILD_ID="dontKillMe"
       }
       steps {
         sh "npm install"
