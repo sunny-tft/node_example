@@ -7,8 +7,8 @@
     "pm2": "^4.1.2"
   },
   "scripts": {
-    "start": "pm2 start server.js -i 1 --env production",
-    "stop": "pm2 delete all"
+    "start": "pm2 start --name node_example server.js -i 1 --env production",
+    "stop": "pm2 stop node_example"
   },
   "repository": {
     "type": "git",
