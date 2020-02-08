@@ -6,7 +6,10 @@ apps:
     watch: false
     env:
       NODE_ENV: development
-    env_production:
-      NODE_ENV: production
+      PORT: 3000
     env_staging:
       NODE_ENV: staging
+      PORT: 12345
+    env_production:
+      NODE_ENV: production
+      PORT: 12345
