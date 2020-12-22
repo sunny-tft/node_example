@@ -2,19 +2,19 @@
 const http = require('http');
 
 // the PORT is being read from the ecosystem.config.yml and set as an environment variable, will default to port 3000 when running locally
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 // the NODE_ENV is being read from the ecosystem.config.yml and set as an environment variable
 const environment = process.env.NODE_ENV || "development";
 
 // the NODE_ENV is being read from the ecosystem.config.yml and set as an environment variable
-const password = process.env.PASSWORD || "topsecret";
+const password =  "topsecret";
 
 // we setup the request handler to respond to incoming http requests
 const requestHandler = (request, response) => {
   console.log(request.url);
   // we printout the environment and password
-  response.end('Hello Node.js Server! env: ' + environment + " password : " + password)
+  response.end('Hello Node.js Server! env: ' + environment);
 };
 
 // we create the server
