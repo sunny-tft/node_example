@@ -14,7 +14,7 @@ const password =  "topsecret";
 const requestHandler = (request, response) => {
   console.log(request.url);
   // we printout the environment and password
-  response.end('Hello Node.js Server! env: ' + environment);
+  response.end('Hello Node.js Server updated! env: ' + environment);
 };
 
 // we create the server
